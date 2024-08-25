@@ -21,4 +21,3 @@ if ($roll == 6) {
 } else {
     echo '<p>Sorry, you didn\'t win, better luck next time!</p>';
 }
-0
