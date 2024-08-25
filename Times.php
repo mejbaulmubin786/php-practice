@@ -40,10 +40,12 @@
     input[type="number"] {
       width: 100%;
       padding: 10px;
+      padding-right: 10px; /* Right padding for space */
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 16px;
+      box-sizing: border-box; /* Ensures padding doesn't affect total width */
     }
 
     button[type="submit"] {
@@ -83,16 +85,12 @@
       transform: scale(1.05);
     }
 
-    /* Adjusted to display the green line above the multiplication table */
-    .column::before {
+    .title-line {
       content: '';
       display: block;
-      margin-bottom: 10px;
+      margin: 10px 0; /* Spacing around the green line */
       border-bottom: 2px solid green;
       width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
     }
   </style>
 </head>
@@ -108,7 +106,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<div class="table">';
     for ($i = $start; $i <= $counting; $i++) {
         echo '<div class="column">';
-        echo '<h3>' . $i . ' times table</h3>'; // Title for each table
+        echo '<h3>' . $i . ' times table</h3>';
+        echo '<div class="title-line"></div>'; // Green line under the title
         for ($j = 1; $j <= $end; $j++) {
             echo $i . ' x ' . $j . ' = ' . ($i * $j) . '<br>';
         }
