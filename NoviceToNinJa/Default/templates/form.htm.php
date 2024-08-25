@@ -16,3 +16,8 @@
  </form>
  </body>
  </html>
+
+ <?php
+ if(isset($_POST['firstname'])){
+  include __DIR__ . '/../templates/form.html.php'
+ }
