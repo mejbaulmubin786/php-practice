@@ -76,18 +76,23 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
       text-align: center;
+      position: relative;
     }
 
     .column:hover {
       transform: scale(1.05);
     }
 
-    .column::after {
+    /* Adjusted to display the green line above the multiplication table */
+    .column::before {
       content: '';
       display: block;
-      margin-top: 10px;
+      margin-bottom: 10px;
       border-bottom: 2px solid green;
       width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   </style>
 </head>
@@ -103,6 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo '<div class="table">';
     for ($i = $start; $i <= $counting; $i++) {
         echo '<div class="column">';
+        echo '<h3>' . $i . ' times table</h3>'; // Title for each table
         for ($j = 1; $j <= $end; $j++) {
             echo $i . ' x ' . $j . ' = ' . ($i * $j) . '<br>';
         }
