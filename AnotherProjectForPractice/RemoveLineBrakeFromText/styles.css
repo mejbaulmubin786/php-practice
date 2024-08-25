@@ -30,7 +30,8 @@ textarea {
 }
 
 label {
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
   color: #555; /* Slightly darker for better readability */
   margin-bottom: 5px;
   display: block;
