@@ -46,6 +46,9 @@
       border-radius: 5px;
       font-size: 16px;
       box-sizing: border-box; /* Ensures padding doesn't affect total width */
+      /*
+      padding-right: 10px; যুক্ত করা হয়েছে input[type="number"] সিলেক্টরে যাতে ইনপুট বক্সের ডান পাশে কিছু স্পেস তৈরি হয়।
+      box-sizing: border-box; ব্যবহার করা হয়েছে যাতে padding ইনপুট বক্সের মোট প্রস্থকে প্রভাবিত না করে।*/
     }
 
     button[type="submit"] {
