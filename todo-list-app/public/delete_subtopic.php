@@ -1,12 +1,12 @@
 <?php
-// public/add_task.php
+// public/delete_subtopic.php
 
 require_once '../config/database.php';
 require_once '../models/Task.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (isset($_GET['id'])) {
     $task = new Task($pdo);
-    $task->addTask($_POST['title'], $_POST['category']);
+    $task->deleteSubtopic($_GET['id']);
 }
 
 header('Location: index.php');

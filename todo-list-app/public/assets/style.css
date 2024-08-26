@@ -1,0 +1,90 @@
+/* public/assets/style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #4caf50;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form select {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+li a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+/* public/assets/style.css */
+
+/* Existing styles remain the same */
+
+ul ul {
+  margin-left: 20px;
+}
+
+ul ul li {
+  background-color: #e8e8e8;
+  width: 350px;
+}
+
+ul ul li a {
+  color: #c0392b;
+}
