@@ -11,6 +11,7 @@
     <form action="add_task.php" method="POST">
         <input type="text" name="title" placeholder="Enter task" required>
         <select name="category">
+            <option value="Education">Study</option>
             <option value="Work">Work</option>
             <option value="Personal">Personal</option>
             <!-- Add more categories as needed -->
@@ -20,6 +21,7 @@
     <form action="index.php" method="GET">
         <select name="category" onchange="this.form.submit()">
             <option value="All" <?=$category === 'All' ? 'selected' : ''?>>All</option>
+            <option value="Education" <?=$category === 'Education' ? 'selected' : ''?>>Study</option>
             <option value="Work" <?=$category === 'Work' ? 'selected' : ''?>>Work</option>
             <option value="Personal" <?=$category === 'Personal' ? 'selected' : ''?>>Personal</option>
             <!-- Add more categories as needed -->
