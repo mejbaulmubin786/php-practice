@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 300px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Makes the checkbox larger */
+}
+
+select {
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-checkbox:checked + li {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-item {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.sub-task-item {
+    padding-left: 40px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item, .sub-task-item {
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+div {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+
