@@ -16,3 +16,4 @@ foreach ($tasks as &$task) {
 include '../views/header.php';
 include '../views/tasks.php';
 include '../views/footer.php';
+?>
