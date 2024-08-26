@@ -11,6 +11,7 @@
                 <li>
                     <input type="checkbox" onclick="window.location.href='update_subtopic.php?id=<?=$subtopic['id']?>&is_completed=<?=$subtopic['is_completed'] ? 0 : 1?>'" <?=$subtopic['is_completed'] ? 'checked' : ''?>>
                     <?=htmlspecialchars($subtopic['title'])?>
+                    <span>(<?=date('F j, Y, g:i a', strtotime($subtopic['created_at']))?>)</span>
                     <a href="delete_subtopic.php?id=<?=$subtopic['id']?>">Delete</a>
                 </li>
             <?php endforeach;?>
